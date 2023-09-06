@@ -153,21 +153,6 @@ li img {
     font-style: normal;
     font-weight: 400;
 
-    &_item {
-    color: #C4C4C4;
-    font-size: 9px;
-    font-weight: 400;
-        }
-    }
-}
-.card_content {
-    margin-left: 20px;
-}
-.card_icon {
-    position: absolute;
-    right: 15px;
-    top: 21px;
-}
 
 
 </style>
