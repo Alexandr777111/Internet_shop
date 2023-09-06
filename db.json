@@ -1,0 +1,25 @@
+{
+    "products":[
+        { "name":"card_1",
+          "price":1000 },
+
+        { "name":"card_1",
+          "price":2000 },
+
+        { "name":"card_1",
+          "price":500 },
+
+        { "name":"card_1",
+          "price":200 },
+
+        { "name":"card_1",
+          "price":100 },
+
+        { "name":"card_1",
+          "price":500 },
+          
+        { "name":"card_1",
+          "price":1000 }
+        
+    ]
+}
