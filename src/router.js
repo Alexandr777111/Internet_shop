@@ -1,8 +1,8 @@
-import { createRouter,createWebHashHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import Home from './pages/Home.vue'
 import  Bag  from './pages/Bag.vue'
 import  Product  from './pages/Product.vue'
-import Likes from './pages/Likes.vue'
+import Favorites from './pages/Favorites.vue'
 
 
 export default createRouter({
@@ -11,7 +11,7 @@ export default createRouter({
         { path: '/', component: Home, alias: '/' },
         { path: '/bag', component: Bag },
         { path: '/product', component: Product },
-        { path: '/likes', component: Likes }
+        { path: '/favorites', component: Favorites }
         
     ]
 })

@@ -73,18 +73,14 @@
     position: relative;
     width: 1140px;
     margin: 0 auto;
-    margin-top: 100px;
-    overflow: hidden;
+    margin-top: 15px;
 }
-
-
 .menu {
     width: 411px;
     height: 80px;
     display: flex;
     flex-flow: column wrap;
 }
-
 h1 {
     color: #000;
     font-family: Roboto;
@@ -178,7 +174,4 @@ a {
     position: absolute;
     right: 175px;
 }
-
-
 </style>
-
