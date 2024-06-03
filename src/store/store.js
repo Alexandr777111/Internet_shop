@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 
+
 export const useBagStore = defineStore("bag", {
   state: () => {
     return { 

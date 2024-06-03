@@ -2,23 +2,23 @@
     <div class="footer">
         <section class="container">
             <div class="nav_footer">
-                <h1>НАВИГАЦИЯ</h1>
+                <h1> НАВИГАЦИЯ </h1>
                 <div class="menu">
-                    <a href="#">Кухни</a>
-                    <a href="#">Спальни</a>
-                    <a href="#">Гостинные</a>
+                    <a href="#"> Кухни </a>
+                    <a href="#"> Спальни </a>
+                    <a href="#"> Гостинные </a>
 
-                    <a href="#">Прихожие</a>
-                    <a href="#">Офисная мебель</a>
-                    <a href="#">Детская</a>
+                    <a href="#"> Прихожие </a>
+                    <a href="#"> Офисная мебель </a>
+                    <a href="#"> Детская </a>
                     
-                    <a href="#">Шкафы</a>
-                    <a href="#">Матрасы</a>
-                    <a href="#">Мягкая мебель</a>
+                    <a href="#"> Шкафы </a>
+                    <a href="#"> Матрасы </a>
+                    <a href="#"> Мягкая мебель </a>
                 </div>
                 <div class="menu_under">
-                    <a class="menu_under_item" href="#">Акции</a>
-                    <a class="menu_under_item" href="#">Новинки</a>
+                    <a class="menu_under_item" href="#"> Акции </a>
+                    <a class="menu_under_item" href="#"> Новинки </a>
                 </div>
             </div>
             <div class="footer_logo">
@@ -65,13 +65,15 @@
     height: 20px;
 }
 .footer {
+    margin-top: 10px;
     width: 100%;
     background: #FFF;
     box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.03);
 }
 .container {
     position: relative;
-    width: 1140px;
+    max-width: 1140px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 15px;
 }
@@ -174,4 +176,21 @@ a {
     position: absolute;
     right: 175px;
 }
+@media (max-width: 1160px) {
+    .container {
+        padding: 0 70px;
+    }
+    .footer_addres {
+        padding-right: 70px;
+    }
+    .footer_logo {
+        right: 70px;
+    }
+    .footer_contact {
+        margin-right: 70px;
+    }
+
+}
+
+
 </style>

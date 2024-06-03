@@ -11,23 +11,23 @@
   
    >
   <swiper-slide class="slide_item">
-    <h1 class="slide_header">loft <br>мебель</h1>
-    <p class="slide_text">Современная и удобная мебель в Анапе</p>
-    <button class="slide_button">СМОТРЕТЬ КАТАЛОГ</button>
+    <h1 class="slide_header"> loft <br> мебель </h1>
+    <p class="slide_text"> Современная и удобная мебель в Анапе </p>
+    <a href="#Home" class="slide_button"> СМОТРЕТЬ КАТАЛОГ </a>
     <img src="../pictures-slide/1785 1.png" alt="">
   </swiper-slide>
 
   <swiper-slide class="slide_item">
-    <h1 class="slide_header">loft <br>мебель</h1>
+    <h1 class="slide_header"> loft <br> мебель </h1>
     <p class="slide_text">Современная и удобная мебель в Анапе</p>
-    <button class="slide_button">СМОТРЕТЬ КАТАЛОГ</button>
+    <a href="#Home" class="slide_button">СМОТРЕТЬ КАТАЛОГ</a>
     <img src="../pictures-slide/1785 1.png" alt="">
   </swiper-slide>
 
   <swiper-slide class="slide_item">
-    <h1 class="slide_header">loft <br>мебель</h1>
-    <p class="slide_text">Современная и удобная мебель в Анапе</p>
-    <button class="slide_button">СМОТРЕТЬ КАТАЛОГ</button>
+    <h1 class="slide_header"> loft <br> мебель </h1>
+    <p class="slide_text"> Современная и удобная мебель в Анапе </p>
+    <a href="#Home" class="slide_button"> СМОТРЕТЬ КАТАЛОГ </a>
     <img src="../pictures-slide/1785 1.png" alt="">
     
   </swiper-slide>
@@ -38,7 +38,6 @@
 
 </template>
 <script>
-
 import { register } from 'swiper/element/bundle';
 register();
 
@@ -58,12 +57,12 @@ register();
 .swiper-button-next, .swiper-button-prev {
   width: 40px;
   height: 30px;
-  background-color: red;
+  background-color: white;
 }
 
-.swiper-button-next::after {
+/* .swiper-button-next::after {
   color: rgba(157, 157, 157, 0.28);
-}
+} */
 .slide_header {
   position: absolute;
   padding: 120px 100px;
@@ -90,8 +89,11 @@ register();
 }
 .slide_button {
   position: absolute;
+  z-index: 10;
   width: 163px;
   height: 45px;
+  text-align: center;
+  padding: 15px;
   margin: 264px 100px;
   color:#414141;
   font-family: Roboto Condensed;
@@ -105,6 +107,19 @@ register();
   background-color: #FFF;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.07);
 
+}
+@media (max-width: 1160px) {
+  .mySwiper {
+    max-width: 960px;
+    width: 100%;
+
+  }
+}
+@media (max-width: 768px) {
+  .mySwiper {
+    max-width: 720px;
+    width: 100%;
+  }
 }
 
 

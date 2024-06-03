@@ -27,7 +27,7 @@
             </div> 
         </section>
         <div class="basket_order">
-                <div class='total-price'> Итоговая стоимость: <span class='total-price-number'>{{ TotalPrice + ' ₽' }}</span></div>
+                <div  class='total-price'> Итоговая стоимость: <span class='total-price-number'>{{ TotalPrice + ' ₽' }}</span></div>
                 <button class='bag_button'> Оформить заказ </button>
             </div>
         <Footer/>
@@ -41,6 +41,8 @@
 import AppHeader from '../components/AppHeader.vue'
 import Footer from '../components/Footer.vue'
 import { useBagStore } from '@/store/store.js'
+
+
 
 const bagStore = useBagStore()
 
@@ -178,7 +180,7 @@ svg {
     width: 1140px;
     margin: 0 auto;
     display: flex;
-    margin-top: 5rem;
+    margin-top: 13rem;
     justify-content: flex-end
 }
 .total-price {
@@ -202,7 +204,16 @@ svg {
     font-size: 25px;
     color: #414141;
     font-family: Roboto;
-    margin-top: 100px;
+    margin-top: 150px;
+    opacity: 0.6;
+}
+@media (max-width: 1160px) {
+    .basket {
+        max-width: 960px;
+    }
+    .basket_order {
+        max-width: 960px;
+    }
 }
 
 </style>

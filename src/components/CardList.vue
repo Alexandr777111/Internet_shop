@@ -56,6 +56,24 @@ $main-color: #414141;
     font-family: Roboto;
     font-size: 16px;
 }
+@media (max-width: 1160px) {
+    .Home_page {
+        max-width: 960px;
+        width: 100%;
+    }
+    .catalog {
+        justify-content: space-between;
+    }
+}
+@media (max-width: 865px) {
+   
+}
+@media (max-width: 768px) {
+    .Home_page {
+        padding: 10px;
+    }
+}
+
 
 
 
