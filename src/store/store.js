@@ -8,8 +8,8 @@ export const useBagStore = defineStore("bag", {
     };
   },
   getters: {
-    totalPrice() {
-      return this.bag.reduce((total, item) => total + item.Price * item.quantity, 0);
+    totalPrice(state) {
+      return state.bag.reduce((total, item) => total + item.Price * item.quantity, 0)
     },
     totalCount() {
       return this.bag.reduce((total, item) => total + item.quantity, 0);

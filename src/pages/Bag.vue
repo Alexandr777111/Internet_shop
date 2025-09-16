@@ -7,7 +7,7 @@
             <div v-if="bagStore.bag.length === 0" class='basket-clear'> Корзина пуста </div>
             <div v-else class="up_basket">
                 <p> Ваша корзина </p>
-                <p> {{ displayItemCount(TotalCount) }} </p>
+                <p> {{ displayItemCount(bagStore.totalCount) }} </p>
             </div>
               <div v-for="(item, index) in bagStore.bag" :key="index" class="card_products"> 
                 <img :src=" './src/card-picture/' + item.img" alt="">
@@ -27,7 +27,7 @@
             </div> 
         </section>
         <div class="basket_order">
-                <div  class='total-price'> Итоговая стоимость: <span class='total-price-number'>{{ TotalPrice + ' ₽' }}</span></div>
+                <div  class='total-price'> Итоговая стоимость: <span class='total-price-number'>{{ bagStore.totalPrice + ' ₽' }}</span></div>
                 <button class='bag_button'> Оформить заказ </button>
             </div>
         <Footer/>

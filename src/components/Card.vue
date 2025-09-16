@@ -10,13 +10,13 @@
                 <p> Барные стулья </p>
                 <h2 class="card_price">{{ product_data.Price + " ₽" }}</h2>
                 <div class="active">
-                    <p class="dimensions_header">Размеры</p>
+                    <p class="dimensions_header"> Размеры </p>
                 <div class="dimensions">
-                    <p class="dimensions_item">Ширина</p>
-                    <p class="dimensions_item">Глубина</p>
-                    <p class="dimensions_item">Высота</p>
+                    <p class="dimensions_item"> Ширина </p>
+                    <p class="dimensions_item"> Глубина </p>
+                    <p class="dimensions_item"> Высота </p>
                 </div>
-                <button @click='addToCart(product_data)' class="card_button">Добавить в корзину</button>
+                <button @click='addToCart(product_data)' class="card_button"> Добавить в корзину </button>git branch
                 </div>
             </div>
             </div>
@@ -38,18 +38,6 @@ const addToCart = (item) => {
 }
 
 
-
-
-//  export default {
-//     props: {
-//         product_data: {
-//             type: Object,
-//             default() {
-//                 return {}
-//             }
-//         }
-//     }
-//  }
 </script>
 
 <style lang="scss" scoped>
